@@ -22,7 +22,7 @@ polygon = Polygon(inputcov)
 
 matches = []
 needfiles = []
-for root, dirnames, filenames in os.walk('/OpenAddressData/Data/us/'):
+for root, dirnames, filenames in os.walk('OpenAddressData/summary/us/'):
     for filename in fnmatch.filter(filenames, '*.csv'):
 		matches.append(os.path.join(root, filename))
 		for file in matches:
